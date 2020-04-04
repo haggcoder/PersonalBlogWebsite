@@ -1,0 +1,143 @@
+@import "navbar.css";
+@import "social.css";
+@import "footer.css";
+@import "a.css";
+
+.banner {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px -8px 0px -8px;
+    height: max(300px, min(36vw,400px));
+    background-image: url("../images/smallbanner.jpg");
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px){
+    .banner {
+        background-image: url("../images/banner.jpg");
+    }
+}
+
+.blogtitle {
+    font-family: 'Parisienne', sans-serif;
+    font-size: min(14vw,100px);
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Parisienne', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: none;
+}
+
+.blogcard {
+    border: 1px solid rgb(245,245,245);
+    margin: 10px 0px;
+}
+
+.blogimage {
+    height: max(200px, min(36vw,400px));
+    background-size: cover;
+}
+
+#blog1 {
+    background-image: url("../images/blog1.jpg");
+}
+
+#blog2 {
+    background-image: url("../images/blog2.jpg");
+}
+
+#blog3 {
+    background-image: url("../images/blog3.jpg");
+}
+
+#blog4 {
+    background-image: url("../images/blog4.jpg");
+}
+
+.blogheading{
+    font-family: 'Parisienne', sans-serif;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.blogstart {
+    margin-top: 10px;
+    font-family: 'Parisienne', sans-serif;
+    font-size: 35px;
+}
+
+.blogintro {
+    border-bottom: 2px solid rgb(230,230,230);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.bloginfo {
+    padding: 20px;
+}
+
+.views {
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 768px){
+    .bloginfo{
+        font-size: 16px;
+    }
+
+    .blogstart {
+        font-size: 40px;
+    }
+
+    .blogheading {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .blogcard {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .bloginfo{
+        font-size: 17px;
+    }
+
+    .blogheading {
+        font-size: 40px;
+    }
+
+    .blogstart {
+        font-size: 45px;
+    }
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}

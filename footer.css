@@ -1,0 +1,121 @@
+.footer {
+    background-color: rgb(150,150,150);
+    margin: 0px -8px -8px -8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    padding: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    justify-items: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about *{
+    margin-bottom: 5px;
+}
+
+.footerheading {
+    font-family: 'Parisienne', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about img {
+    height: 150px;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+
+.suscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 286px;
+}
+
+.suscribeform {
+    text-align: left;
+    width: 100%;
+}
+
+.suscribeform * {
+    margin: 5px 0px;
+    width: 100%;
+    color: white;
+}
+
+.suscribe input {
+    background-color: rgb(150,150,150);
+    border: 2px solid white;
+    padding: 5px;
+}
+
+.join {
+    background-color: rgb(32,104,221);
+    font-family: 'Quicksand', sans-serif;
+    border: 0px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.mandatory {
+    color: red;
+}
+
+.fi {
+    margin: 0px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+@media only screen and (min-width: 538px){
+    .about {
+        display: grid;
+        grid-template-columns: 165px 1fr;
+        grid-template-rows: min-content min-content 1fr;
+        grid-template-areas:
+        "i c"
+        "i c"
+        "i c";
+        grid-column-gap: 10px;
+        justify-content: center;
+    }
+
+    .fi{
+        grid-area: i;
+    }
+
+    .about img {
+        height: 160px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width: 968px){
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about {
+        grid-template-columns: 221px 1fr;
+        margin-right: 100px;
+    }
+
+    .about img {
+        height: 221px;
+        margin: 0px;
+    }
+    .fd {
+        max-width: 280px;
+    }
+}
